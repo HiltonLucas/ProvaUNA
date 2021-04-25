@@ -1,0 +1,31 @@
+.Titulo{
+    text-align: center;
+    background: #110ACF;
+    background: -webkit-linear-gradient(to right, #000000 0%, #5cd0f3 50%, #1c10c9 100%);
+    background: -moz-linear-gradient(to right, #000000 0%, #5cd0f3 50%, #1c10c9 100%);
+    background: linear-gradient(to right, #000000 0%, #5cd0f3 50%, #1c10c9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+.Imagem{
+    text-align: center;
+}
+.Tabela{
+    text-align: center;
+    align-items: center;
+}
+.CorP{
+    background: #110ACF;
+    background: -webkit-linear-gradient(to right, #000000 0%, #5cd0f3 50%, #1c10c9 100%);
+    background: -moz-linear-gradient(to right, #000000 0%, #5cd0f3 50%, #1c10c9 100%);
+    background: linear-gradient(to right, #000000 0%, #5cd0f3 50%, #1c10c9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ImagemR{
+    width: 512px;
+    height: 455px;
+}
+footer{
+    position: relative-0;
+}

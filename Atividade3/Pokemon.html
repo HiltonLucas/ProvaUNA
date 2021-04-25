@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pokemons Exemplo</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 8px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Meus Pokemons</h1>
+
+    <div>
+        <label for="item">Entre com um Novo Pokemon:</label>
+        <input type="text" name="item" id="pokemon">
+        <button id="btn">Adicionar um Novo Pokemon</button>
+    </div>
+
+    <ul id="lpokemon">
+
+    </ul>
+
+    <script>
+        const botao = document.querySelector('#btn');
+
+        botao.addEventListener("click", function () {
+
+
+            let pokemon = document.getElementById("pokemon").value;
+            if (pokemon) {
+                const lista = document.querySelector('#lpokemon');
+                const item = document.createElement('li');
+                const spn = document.createElement('span');
+                const botaoApagar = document.createElement('button');
+                item.textContent = pokemon;
+                botaoApagar.textContent = 'Apagar';
+                lista.appendChild(item);
+                lista.appendChild(botaoApagar);
+                
+
+                botaoApagar.addEventListener("click", function () {
+                    lista.removeChild(item);
+                    lista.removeChild(botaoApagar);
+                
+                document.getElementById("pokemon").value = '';
+                document.getElementById("pokemon").focus();
+                })
+                
+            }
+            else {
+                alert("Você não digitou o nome do pokemon");
+            }
+            document.getElementById("pokemon").value = '';
+            document.getElementById("pokemon").focus();
+        });
+
+    </script>
+
+</body>
+
+</html>
